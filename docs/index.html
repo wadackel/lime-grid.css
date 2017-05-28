@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta name="format-detection" content="telephone=no,address=no,email=no">
+  <meta name="description" content="Powerful Flexbox based Grid System for modern browsers.">
+  <title>LIME GRID CSS</title>
+  <link rel="shortcut icon" href="./favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <a href="https://github.com/tsuyoshiwada/lime-grid.css" class="github-corner" aria-label="View source on Github"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#A9E3DA; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+
+  <header>
+    <div class="container">
+      <h1><img src="./images/logo.svg" width="80" height="80" alt="LIME GRID"></h1>
+      <p>Powerful Flexbox based Grid System for modern browsers. </p>
+
+      <div>
+        <a class="github-button" href="https://github.com/tsuyoshiwada/lime-grid.css" data-show-count="true" aria-label="Star tsuyoshiwada/lime-grid.css on GitHub">Star</a>
+        <a class="github-button" href="https://github.com/tsuyoshiwada/lime-grid.css/fork" data-show-count="true" aria-label="Fork tsuyoshiwada/lime-grid.css on GitHub">Fork</a>
+        <a class="github-button" href="https://github.com/tsuyoshiwada/lime-grid.css/archive/master.zip" aria-label="Download tsuyoshiwada/lime-grid.css on GitHub">Download</a>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <h2>The Grid</h2>
+      <p>LIME GRID is a 12-column fluid grid. inspired by <a href="https://github.com/kristoferjoseph/flexboxgrid">flexboxgrid</a>.<br>You can apply different gutter widths from mobile to large desktop.<br>The goal is to improve the quality of UI with each optimized design.</p>
+
+      <div class="row">
+        <div class="col-3"><div class="box"></div></div>
+        <div class="col-3"><div class="box"></div></div>
+        <div class="col-3"><div class="box"></div></div>
+        <div class="col-3"><div class="box"></div></div>
+      </div>
+
+      <div class="row">
+        <div class="col-4"><div class="box"></div></div>
+        <div class="col-4"><div class="box"></div></div>
+        <div class="col-4"><div class="box"></div></div>
+      </div>
+
+      <div class="row">
+        <div class="col-6"><div class="box"></div></div>
+        <div class="col-6"><div class="box"></div></div>
+      </div>
+
+      <div class="row">
+        <div class="col-12"><div class="box"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>Grid Options</h2>
+      <p>Please check the table below for how it works at each breakpoint.</p>
+
+      <div class="table">
+        <table style="min-width: 600px;">
+          <thead>
+            <tr>
+              <th>&nbsp;</th>
+              <th>Extra Small (xs)<br>&lt;576px</th>
+              <th>Small (sm)<br>&gt;=576px</th>
+              <th>Medium (md)<br>&gt;=768px</th>
+              <th>Large (lg)<br>&gt;=992px</th>
+              <th>Extra Large (xl)<br>&gt;=1200px</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Container width</th>
+              <td>auto</td>
+              <td>540px</td>
+              <td>720px</td>
+              <td>960px</td>
+              <td>1150px</td>
+            </tr>
+            <tr>
+              <th>Gutter width</th>
+              <td>20px</td>
+              <td>20px</td>
+              <td>30px</td>
+              <td>30px</td>
+              <td>40px</td>
+            </tr>
+            <tr>
+              <th>Outside gutter width</th>
+              <td>15px</td>
+              <td>15px</td>
+              <td>15px</td>
+              <td>15px</td>
+              <td>20px</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>The above is the default setting. You can customize the settings by using <a href="https://github.com/postcss/postcss">PostCSS</a>.<br>See <a href="https://github.com/tsuyoshiwada/lime-grid.css">README</a> for details.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>Responsive</h2>
+      <p>It is a usage similar to Bootstrap and flexboxgrid in order to lower learning cost.<br>Note: the Gutter width changes for each breakpoint, so you need to grant the class with all the prefixes.</p>
+
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6"><div class="box"></div></div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6"><div class="box"></div></div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4"><div class="box"></div></div>
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4"><div class="box"></div></div>
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4"><div class="box"></div></div>
+      </div>
+
+      <pre><code class="language-html">&lt;div class=&quot;container&quot;&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>Always</h2>
+      <p>If you always have the same number of columns, you can use Shorthand.</p>
+
+      <div class="row">
+        <div class="col-2"><div class="box"></div></div>
+        <div class="col-2"><div class="box"></div></div>
+        <div class="col-2"><div class="box"></div></div>
+        <div class="col-2"><div class="box"></div></div>
+        <div class="col-2"><div class="box"></div></div>
+        <div class="col-2"><div class="box"></div></div>
+      </div>
+
+      <pre><code class="language-html">&lt;div class=&quot;container&quot;&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-2&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;col-2&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;col-2&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;col-2&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;col-2&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;col-2&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>Auto width</h2>
+      <p>The column is automatically sized according to the number of columns.</p>
+
+      <div class="row">
+        <div class="col"><div class="box"></div></div>
+        <div class="col"><div class="box"></div></div>
+        <div class="col"><div class="box"></div></div>
+      </div>
+
+      <pre><code class="language-html">&lt;div class=&quot;container&quot;&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;col&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;col&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>Nesting</h2>
+      <p>Supports nested grids. as well as other frameworks.</p>
+
+      <div class="row">
+        <div class="col-8">
+          <div class="box" data-depth="1">
+            <div class="row">
+              <div class="col-8">
+                <div class="box" data-depth="2">
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="box" data-depth="3"></div>
+                    </div>
+                    <div class="col-6">
+                      <div class="box" data-depth="3"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4"><div class="box" data-depth="2"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="box" data-depth="1">
+            <div class="row">
+              <div class="col-6">
+                <div class="box" data-depth="2"></div>
+              </div>
+              <div class="col-6">
+                <div class="box" data-depth="2"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <pre><code class="language-html">&lt;div class=&quot;container&quot;&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-8&quot;&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-8&quot;&gt;
+          &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;col-6&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;col-6&quot;&gt;&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-4&quot;&gt;&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-4&quot;&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-6&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;col-6&quot;&gt;&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>Offsets</h2>
+      <p>Offset by the specified column.</p>
+
+      <div class="row">
+        <div class="col-offset-11 col-1"><div class="box"></div></div>
+        <div class="col-offset-10 col-2"><div class="box"></div></div>
+        <div class="col-offset-9 col-3"><div class="box"></div></div>
+        <div class="col-offset-8 col-4"><div class="box"></div></div>
+        <div class="col-offset-7 col-5"><div class="box"></div></div>
+        <div class="col-offset-6 col-6"><div class="box"></div></div>
+        <div class="col-offset-5 col-7"><div class="box"></div></div>
+        <div class="col-offset-4 col-8"><div class="box"></div></div>
+        <div class="col-offset-3 col-9"><div class="box"></div></div>
+        <div class="col-offset-2 col-10"><div class="box"></div></div>
+        <div class="col-offset-1 col-11"><div class="box"></div></div>
+      </div>
+
+      <pre><code class="language-html">&lt;div class=&quot;container&quot;&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;!-- Shorthand --&gt;
+    &lt;div class=&quot;col-offset-11 col-1&quot;&gt;&lt;/div&gt;
+
+    &lt;!-- Breakpoint --&gt;
+    &lt;div class=&quot;col-xs-offset-11 col-xs-1 ...&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;col-sm-offset-11 col-xs-1 ...&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;col-md-offset-11 col-xs-1 ...&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;col-lg-offset-11 col-xs-1 ...&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;col-xl-offset-11 col-xs-1 ...&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>Alignment</h2>
+      <p>Sets the horizontal and vertical alignment position.</p>
+
+      <h3>Start</h3>
+      <div class="box" data-depth="1">
+        <div class="row row-xs-start">
+          <div class="col-6">
+            <div class="box" data-depth="2"></div>
+          </div>
+        </div>
+      </div>
+
+      <pre><code class="language-html">&lt;div class=&quot;row row-xs-start&quot;&gt;
+  &lt;div class=&quot;col-6&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+      <h3>Center</h3>
+      <div class="box" data-depth="1">
+        <div class="row row-xs-center">
+          <div class="col-6">
+            <div class="box" data-depth="2"></div>
+          </div>
+        </div>
+      </div>
+
+      <pre><code class="language-html">&lt;div class=&quot;row row-xs-center&quot;&gt;
+  &lt;div class=&quot;col-6&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+      <h3>End</h3>
+      <div class="box" data-depth="1">
+        <div class="row row-xs-end">
+          <div class="col-6">
+            <div class="box" data-depth="2"></div>
+          </div>
+        </div>
+      </div>
+
+      <pre><code class="language-html">&lt;div class=&quot;row row-xs-end&quot;&gt;
+  &lt;div class=&quot;col-6&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+      <h3>Top</h3>
+      <div class="row row-xs-top">
+        <div class="col-6">
+          <div class="box" data-size="lg"></div>
+        </div>
+        <div class="col-6">
+          <div class="box"></div>
+        </div>
+      </div>
+
+      <pre><code class="language-html">&lt;div class=&quot;row row-xs-top&quot;&gt;
+  &lt;div class=&quot;col-6&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;col-6&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+      <h3>Middle</h3>
+      <div class="row row-xs-middle">
+        <div class="col-6">
+          <div class="box" data-size="lg"></div>
+        </div>
+        <div class="col-6">
+          <div class="box"></div>
+        </div>
+      </div>
+
+      <pre><code class="language-html">&lt;div class=&quot;row row-xs-middle&quot;&gt;
+  &lt;div class=&quot;col-6&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;col-6&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+      <h3>Bottom</h3>
+      <div class="row row-xs-bottom">
+        <div class="col-6">
+          <div class="box" data-size="lg"></div>
+        </div>
+        <div class="col-6">
+          <div class="box"></div>
+        </div>
+      </div>
+
+      <pre><code class="language-html">&lt;div class=&quot;row row-xs-bottom&quot;&gt;
+  &lt;div class=&quot;col-6&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;col-6&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+      <h3>Example</h3>
+
+      <div class="row row-xs-end row-xs-bottom row-md-center row-md-middle">
+        <div class="col-4">
+          <div class="box" data-size="lg"></div>
+        </div>
+        <div class="col-4">
+          <div class="box"></div>
+        </div>
+      </div>
+
+      <pre><code class="language-html">&lt;div class=&quot;row row-xs-end row-xs-bottom row-md-center row-md-middle&quot;&gt;
+  &lt;div class=&quot;col-4&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;col-4&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>Distribution</h2>
+      <p>Set the column distribution method.</p>
+
+      <h3>Around</h3>
+
+      <div class="box" data-depth="1">
+        <div class="row row-xs-around">
+          <div class="col-2"><div class="box" data-depth="2"></div></div>
+          <div class="col-2"><div class="box" data-depth="2"></div></div>
+          <div class="col-2"><div class="box" data-depth="2"></div></div>
+        </div>
+      </div>
+
+      <pre><code class="language-html">&lt;div class=&quot;row row-xs-around&quot;&gt;
+  &lt;div class=&quot;col-2&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;col-2&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;col-2&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+      <h3>Between</h3>
+
+      <div class="box" data-depth="1">
+        <div class="row row-xs-between">
+          <div class="col-2"><div class="box" data-depth="2"></div></div>
+          <div class="col-2"><div class="box" data-depth="2"></div></div>
+          <div class="col-2"><div class="box" data-depth="2"></div></div>
+        </div>
+      </div>
+
+      <pre><code class="language-html">&lt;div class=&quot;row row-xs-between&quot;&gt;
+  &lt;div class=&quot;col-2&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;col-2&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;col-2&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>Reordering</h2>
+      <p>Sets the order of columns.</p>
+
+      <h3>First</h3>
+
+      <div class="row row-xs-around">
+        <div class="col"><div class="box">1</div></div>
+        <div class="col"><div class="box">2</div></div>
+        <div class="col"><div class="box">3</div></div>
+        <div class="col"><div class="box">4</div></div>
+        <div class="col"><div class="box">5</div></div>
+        <div class="col col-first"><div class="box" data-depth="2">6</div></div>
+      </div>
+
+      <pre><code class="language-html">&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col&quot;&gt;1&lt;/div&gt;
+  &lt;div class=&quot;col&quot;&gt;2&lt;/div&gt;
+  &lt;div class=&quot;col&quot;&gt;3&lt;/div&gt;
+  &lt;div class=&quot;col&quot;&gt;4&lt;/div&gt;
+  &lt;div class=&quot;col&quot;&gt;5&lt;/div&gt;
+
+  &lt;!-- Always --&gt;
+  &lt;div class=&quot;col col-first&quot;&gt;6&lt;/div&gt;
+
+  &lt;!-- Breakpoint --&gt;
+  &lt;div class=&quot;col col-xs-first&quot;&gt;6&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+      <h3>Last</h3>
+
+      <div class="row">
+        <div class="col col-last"><div class="box" data-depth="2">1</div></div>
+        <div class="col"><div class="box">2</div></div>
+        <div class="col"><div class="box">3</div></div>
+        <div class="col"><div class="box">4</div></div>
+        <div class="col"><div class="box">5</div></div>
+        <div class="col"><div class="box">6</div></div>
+      </div>
+
+
+      <pre><code class="language-html">&lt;div class=&quot;row&quot;&gt;
+  &lt;!-- Always --&gt;
+  &lt;div class=&quot;col col-last&quot;&gt;1&lt;/div&gt;
+
+  &lt;!-- Breakpoint --&gt;
+  &lt;div class=&quot;col col-xs-last&quot;&gt;1&lt;/div&gt;
+
+  &lt;div class=&quot;col&quot;&gt;2&lt;/div&gt;
+  &lt;div class=&quot;col&quot;&gt;3&lt;/div&gt;
+  &lt;div class=&quot;col&quot;&gt;4&lt;/div&gt;
+  &lt;div class=&quot;col&quot;&gt;5&lt;/div&gt;
+  &lt;div class=&quot;col&quot;&gt;6&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>Reversing</h2>
+      <p>Reverse the order of the columns.</p>
+
+      <div class="row row-xs-reverse">
+        <div class="col-2"><div class="box">1</div></div>
+        <div class="col-2"><div class="box">2</div></div>
+        <div class="col-2"><div class="box">3</div></div>
+        <div class="col-2"><div class="box">4</div></div>
+        <div class="col-2"><div class="box">5</div></div>
+        <div class="col-2"><div class="box">6</div></div>
+      </div>
+
+      <pre><code class="language-html">&lt;div class=&quot;row row-xs-reverse&quot;&gt;
+  &lt;div class=&quot;col-2&quot;&gt;1&lt;/div&gt;
+  &lt;div class=&quot;col-2&quot;&gt;2&lt;/div&gt;
+  &lt;div class=&quot;col-2&quot;&gt;3&lt;/div&gt;
+  &lt;div class=&quot;col-2&quot;&gt;4&lt;/div&gt;
+  &lt;div class=&quot;col-2&quot;&gt;5&lt;/div&gt;
+  &lt;div class=&quot;col-2&quot;&gt;6&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div><img src="./images/logo.svg" width="50" height="50" alt="LIME GRID"></div>
+      <p>lime-grid.css licensed under MIT.<br>© lime-grid.css, 2017</p>
+    </div>
+  </footer>
+
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <script src="./js/prism.js"></script>
+</body>
+</html>

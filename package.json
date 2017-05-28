@@ -1,0 +1,58 @@
+{
+  "name": "lime-grid.css",
+  "version": "0.0.1",
+  "description": "Powerful Flexbox based Grid System for modern browsers.",
+  "main": "lime-grid.css",
+  "style": "lime-grid.css",
+  "files": [
+    "lime-grid.css",
+    "lime-grid.min.css",
+    "src"
+  ],
+  "scripts": {
+    "start": "npm run css:dev -- -w",
+    "build": "npm run css:dev & npm run css:prod",
+    "css:common": "postcss src/index.css",
+    "css:dev": "npm run css:common -- -e development -o lime-grid.css",
+    "css:prod": "npm run css:common -- -e production -o lime-grid.min.css",
+    "test": "stylelint \"src/**/*.css\"",
+    "docs": "npm run docs:css",
+    "docs:watch": "npm run docs:server & npm run docs:css:watch",
+    "docs:server": "browser-sync start -s docs -f \"docs/**/*\" --no-notify --no-open --no-ghost-mode",
+    "docs:css": "postcss docs/css/style.css -o docs/style.css -c docs/postcss.config.js",
+    "docs:css:watch": "npm run docs:css -- -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tsuyoshiwada/lime-grid.css.git"
+  },
+  "keywords": [
+    "flexbox",
+    "grid",
+    "grid-system",
+    "css",
+    "browser",
+    "lime-grid"
+  ],
+  "author": "tsuyoshiwada",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tsuyoshiwada/lime-grid.css/issues"
+  },
+  "homepage": "https://github.com/tsuyoshiwada/lime-grid.css#readme",
+  "devDependencies": {
+    "autoprefixer": "^7.1.1",
+    "browser-sync": "^2.18.12",
+    "cpx": "^1.5.0",
+    "cssnano": "^3.10.0",
+    "postcss-calc": "^6.0.0",
+    "postcss-cli": "^4.0.0",
+    "postcss-custom-media": "^6.0.0",
+    "postcss-custom-properties": "^6.0.1",
+    "postcss-flexbugs-fixes": "^3.0.0",
+    "postcss-import": "^10.0.0",
+    "postcss-nesting": "^4.0.1",
+    "stylelint": "^7.10.1",
+    "stylelint-config-standard": "^16.0.0"
+  }
+}
