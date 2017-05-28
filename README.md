@@ -1,7 +1,7 @@
 ![LIME GRID](https://raw.githubusercontent.com/tsuyoshiwada/lime-grid.css/images/repo-banner.png)
 
 [![Build Status](http://img.shields.io/travis/tsuyoshiwada/lime-grid.css.svg?style=flat-square)](https://travis-ci.org/tsuyoshiwada/lime-grid.css)
-[![npm version](https://img.shields.io/npm/v/lime-grid.css.svg?style=flat-square)](http://badge.fury.io/js/lime-grid.css)
+[![npm version](https://img.shields.io/npm/v/lime-grid.css.svg?style=flat-square)](https://www.npmjs.com/package/lime-grid.css)
 
 > Powerful Flexbox based Grid System for modern browsers.
 
