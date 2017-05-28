@@ -1,9 +1,11 @@
-![LIME GRID](todo)
+![LIME GRID](https://raw.githubusercontent.com/tsuyoshiwada/lime-grid.css/images/repo-banner.png)
 
 [![Build Status](http://img.shields.io/travis/tsuyoshiwada/lime-grid.css.svg?style=flat-square)](https://travis-ci.org/tsuyoshiwada/lime-grid.css)
 [![npm version](https://img.shields.io/npm/v/lime-grid.css.svg?style=flat-square)](http://badge.fury.io/js/lime-grid.css)
 
 > Powerful Flexbox based Grid System for modern browsers.
+
+https://tsuyoshiwada.github.io/lime-grid.css/
 
 
 
@@ -12,6 +14,7 @@
 - [Install](#install)
 - [Usage](#usage)
 - [Customize](#customize)
+- [Changelog](#changelog)
 - [Contribute](#contribute)
 - [License](#license)
 
@@ -27,7 +30,7 @@ $ npm install lime-grid.css --save
 $ yarn add lime-grid.css
 ```
 
-Or download [lime-grid.min.css](todo).
+Or download [lime-grid.min.css](https://raw.githubusercontent.com/tsuyoshiwada/lime-grid.css/master/lime-grid.min.css).
 
 
 
@@ -56,7 +59,7 @@ Once you can include the file, let's build the HTML with reference to the docume
 </div>
 ```
 
-See Documentation.
+See [Documentation](https://tsuyoshiwada.github.io/lime-grid.css/).
 
 
 
@@ -108,7 +111,13 @@ Example:
 /* ...Your stylesheet */
 ```
 
-For details of CSS variables, see [src/variables.css](todo).
+For details of CSS variables, see [src/variables.css](https://github.com/tsuyoshiwada/lime-grid.css/blob/master/src/variables.css).
+
+
+
+## Changelog
+
+See [CHANGELOG.md](./CHANGELOG.md)
 
 
 
