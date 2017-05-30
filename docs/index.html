@@ -34,6 +34,13 @@
       <p>LIME GRID is a 12-column fluid grid. inspired by <a href="https://github.com/kristoferjoseph/flexboxgrid">flexboxgrid</a>.<br>You can apply different gutter widths from mobile to large desktop.<br>The goal is to improve the quality of UI with each optimized design.</p>
 
       <div class="row">
+        <div class="col-xs-3"><div class="box"></div></div>
+        <div class="col-xs-3"><div class="box"></div></div>
+        <div class="col-xs-3"><div class="box"></div></div>
+        <div class="col-xs-3"><div class="box"></div></div>
+      </div>
+
+      <div class="row">
         <div class="col-3"><div class="box"></div></div>
         <div class="col-3"><div class="box"></div></div>
         <div class="col-3"><div class="box"></div></div>
@@ -110,7 +117,7 @@
   <section>
     <div class="container">
       <h2>Responsive</h2>
-      <p>It is a usage similar to Bootstrap and flexboxgrid in order to lower learning cost.<br>Note: the Gutter width changes for each breakpoint, so you need to grant the class with all the prefixes.</p>
+      <p>It is a usage similar to Bootstrap and flexboxgrid in order to lower learning cost.</p>
 
       <div class="row">
         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6"><div class="box"></div></div>
@@ -123,17 +130,29 @@
         <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4"><div class="box"></div></div>
       </div>
 
-      <pre><code class="language-html">&lt;div class=&quot;container&quot;&gt;
-  &lt;div class=&quot;row&quot;&gt;
-    &lt;div class=&quot;col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6&quot;&gt;&lt;/div&gt;
-  &lt;/div&gt;
+      <div class="row">
+        <div class="col-xs-12 col-sm-4"><div class="box"></div></div>
+        <div class="col-xs-12 col-sm-4"><div class="box"></div></div>
+        <div class="col-xs-12 col-sm-4"><div class="box"></div></div>
+      </div>
 
-  &lt;div class=&quot;row&quot;&gt;
-    &lt;div class=&quot;col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4&quot;&gt;&lt;/div&gt;
-  &lt;/div&gt;
+      <pre><code class="language-html">&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- All breakpoints --&gt;
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Only necessary breakpoints --&gt;
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-xs-12 col-sm-4&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;col-xs-12 col-sm-4&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;col-xs-12 col-sm-4&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;</code></pre>
     </div>
   </section>
@@ -147,19 +166,22 @@
         <div class="col-2"><div class="box"></div></div>
         <div class="col-2"><div class="box"></div></div>
         <div class="col-2"><div class="box"></div></div>
-        <div class="col-2"><div class="box"></div></div>
-        <div class="col-2"><div class="box"></div></div>
-        <div class="col-2"><div class="box"></div></div>
+        <div class="col-xs-2"><div class="box"></div></div>
+        <div class="col-xs-2"><div class="box"></div></div>
+        <div class="col-xs-2"><div class="box"></div></div>
       </div>
 
       <pre><code class="language-html">&lt;div class=&quot;container&quot;&gt;
   &lt;div class=&quot;row&quot;&gt;
+    &lt;!-- Very short --&gt;
     &lt;div class=&quot;col-2&quot;&gt;&lt;/div&gt;
     &lt;div class=&quot;col-2&quot;&gt;&lt;/div&gt;
     &lt;div class=&quot;col-2&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;col-2&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;col-2&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;col-2&quot;&gt;&lt;/div&gt;
+
+    &lt;!-- Extra small --&gt;
+    &lt;div class=&quot;col-xs-2&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;col-xs-2&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;col-xs-2&quot;&gt;&lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
     </div>
