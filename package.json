@@ -1,6 +1,6 @@
 {
   "name": "lime-grid.css",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Powerful Flexbox based Grid System for modern browsers.",
   "main": "lime-grid.css",
   "style": "lime-grid.css",
