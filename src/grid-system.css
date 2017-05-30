@@ -396,7 +396,7 @@
     padding-left: var(--outside-gutter-width-sm);
   }
 
-  .container-fuild {
+  .container-fluid {
     padding-right: var(--outside-gutter-width-sm);
     padding-left: var(--outside-gutter-width-sm);
   }
@@ -591,7 +591,7 @@
     padding-left: var(--outside-gutter-width-md);
   }
 
-  .container-fuild {
+  .container-fluid {
     padding-right: var(--outside-gutter-width-md);
     padding-left: var(--outside-gutter-width-md);
   }
@@ -787,7 +787,7 @@
     padding-left: var(--outside-gutter-width-lg);
   }
 
-  .container-fuild {
+  .container-fluid {
     padding-right: var(--outside-gutter-width-lg);
     padding-left: var(--outside-gutter-width-lg);
   }
@@ -982,7 +982,7 @@
     padding-left: var(--outside-gutter-width-xl);
   }
 
-  .container-fuild {
+  .container-fluid {
     padding-right: var(--outside-gutter-width-xl);
     padding-left: var(--outside-gutter-width-xl);
   }
